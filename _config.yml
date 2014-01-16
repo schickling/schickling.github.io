@@ -2,6 +2,6 @@
 
 paginate: 10 # pagination basted on number of posts
 exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss', 'CNAME'] # files to exclude
-permalink: none
+permalink: /:title
 # pygments: true
 markdown: redcarpet
