@@ -3,4 +3,18 @@ layout: post_page
 title: Bluth
 ---
 
-{% include bluth.html %}
+```ruby
+# Output "I love Ruby"
+say = "I love Ruby"
+puts say
+
+# Output "I *LOVE* RUBY"
+say['love'] = "*love*"
+puts say.upcase
+
+# Output "I *love* Ruby"
+# five times
+5.times { puts say }
+```
+
+test
