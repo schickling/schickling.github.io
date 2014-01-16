@@ -169,6 +169,10 @@ main.container, main.content > .container{
         letter-spacing: 0.6em;
     }
 
+    h3{
+        margin-top: 25px;
+    }
+
     h2{
         font-family: Georgia, 'Times New Roman', Times, serif;
         @extend .center-txt;
