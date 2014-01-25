@@ -5,3 +5,4 @@ exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scs
 permalink: /:title
 # pygments: true
 markdown: redcarpet
+production_url: http://schickling.me
