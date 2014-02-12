@@ -1,1 +1,1 @@
-[schickling.github.io](http://schickling.github.io/)
+[schickling.me](http://schickling.me)
