@@ -25,7 +25,7 @@ When I was running `$ gulp build` I did expect that the `dist` folder would be c
 
 After a little research I noticed gulp runs all its tasks in parallel. That means sometimes the `clean` task and sometimes the `concat` tasks runs first. So I needed a way to run those tasks in their correct order.
 
-In the [offical gulp docs on Github](https://github.com/gulpjs/gulp/blob/master/docs/recipes/running-tasks-in-series.md) they recommend using callback functions to run tasks synchronously. Using their solution my code looked something like the following. Unfortunately **it still didn't work**.
+In the [official gulp docs on Github](https://github.com/gulpjs/gulp/blob/master/docs/recipes/running-tasks-in-series.md) they recommend using callback functions to run tasks synchronously. Using their solution my code looked something like the following. Unfortunately **it still didn't work**.
 
 ```js
 gulp.task('clean', function(cb) {
