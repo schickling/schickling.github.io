@@ -3,7 +3,7 @@ layout: post_page
 title: Synchronous tasks and dependencies with Gulp
 ---
 
-While rewriting the build process for one of my projects with [gulp.js](http://gulpjs.com/) a strange behavior was driving me mad. My rough setup looked something like this:
+While rewriting the build process for one of my projects with [gulp.js](http://gulpjs.com/), a strange behavior was driving me mad. My rough setup looked something like this:
 
 ```js
 var gulp = require('gulp'),
@@ -52,7 +52,7 @@ gulp.task('concat', ['clean'], function() {
 gulp.task('build', ['clean', 'concat']);
 ```
 
-The difference is that you need to `return` the actual task and gulp knows on its own when it's done. To specify the running order of the tasks, you need to add the dependent tasks, which should be finished first, as the second parameter to a task. In my case it's pretty obvious that the directory needs to be cleaned first, before the `concat` task may run.
+The difference is, that you need to `return` the actual task and gulp knows on its own when it's done. To specify the running order of the tasks, you need to add the dependent tasks, which should be finished first, as the second parameter to a task. In my case it's pretty obvious, that the directory needs to be cleaned first, before the `concat` task may run.
 
 I hope I could help someone with my experiences with gulp. If you got a better solution, please let me know in the comments.
 
