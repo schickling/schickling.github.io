@@ -8,3 +8,4 @@ permalink: /:title
 # pygments: true
 markdown: redcarpet
 production_url: http://schickling.me
+excerpt_separator: --

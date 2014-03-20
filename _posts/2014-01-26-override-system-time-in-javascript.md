@@ -5,6 +5,8 @@ title: Override system time in javascript
 
 I recently wrote a time-dependent part of a business logic, which I needed to unit test. (In javascript I run all my unit tests with [Karma](http://karma-runner.github.io/) and [Jasmine](http://pivotal.github.io/jasmine/)). The logic I had to test depends on the current system time. So it behaves (and should behave) differently if its 10pm or 8am. My first rough workaround was altering the system time of my operating system. Obviously this was a kinda bad solution so I needed to find another way.
 
+--
+
 One solution would have been to wrap the javascript `Date` function and mock it while testing, but this approach kinda felt like overkill. There had to be a simpler solution.
 
 So I ended up writing **[timemachine](https://github.com/schickling/timemachine)**. It lets you **test your time-dependent app by monkey patching the Date function and overriding your system time**. Over the time I added a lot of fancy features.

@@ -5,6 +5,8 @@ title: Synchronous tasks and dependencies with Gulp
 
 While rewriting the build process for one of my projects with [gulp.js](http://gulpjs.com/), a strange behavior was driving me mad. My rough setup looked something like this:
 
+--
+
 ```js
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),
