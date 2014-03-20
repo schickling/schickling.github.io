@@ -1,5 +1,5 @@
 ---
-layout: post_page
+layout: post
 title: Deployment with Capistrano 3
 ---
 

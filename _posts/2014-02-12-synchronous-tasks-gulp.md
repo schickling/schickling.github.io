@@ -1,5 +1,5 @@
 ---
-layout: post_page
+layout: post
 title: Synchronous tasks and dependencies with Gulp
 ---
 
@@ -38,7 +38,7 @@ gulp.task('concat', ['clean'], function() {
 });
 ```
 
-The `cb()` function seemed to be triggered before `rm()` had finished. So I tried another way which finally worked. **Here is the solution** I ended up with. 
+The `cb()` function seemed to be triggered before `rm()` had finished. So I tried another way which finally worked. **Here is the solution** I ended up with.
 
 ```js
 gulp.task('clean', function() {
