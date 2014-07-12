@@ -3,7 +3,7 @@ layout: post
 title: Livereload for Phonegap/Cordova/Ionic
 ---
 
-I love the fast feedback loop of webdevelopment and want to have the same experience for developing mobile applications. I finally found [a way](http://app.phonegap.com) which is ultra fast and dead simple to use.
+I love the fast feedback loop of webdevelopment and want to have the same experience for developing mobile applications. I finally found [a way](http://app.phonegap.com), which is ultra fast and dead simple to use.
 
 --
 
@@ -11,7 +11,7 @@ I'm currently writing my bachelor thesis at [KIT](http://www.kit.edu) about iBea
 
 While working on applications using this plugin I was really annoyed by the compile time. I'm working with web technologies and want to see the changes immediately, like I'm used to.
 
-After a lot of research I found the new [PhoneGap Developer App](http://app.phonegap.com). All you have to do is to install the mobile app on your target device ([iOS](https://itunes.apple.com/app/id843536693)/[Android](https://play.google.com/store/apps/details?id=com.adobe.phonegap.app)) and run the following command in your terminal:
+After a lot of research I found the new [PhoneGap Developer App](http://app.phonegap.com). All you have to do, is to install the mobile app on your target device ([iOS](https://itunes.apple.com/app/id843536693)/[Android](https://play.google.com/store/apps/details?id=com.adobe.phonegap.app)) and run the following command in your terminal:
 
 ```sh
 $ phonegap serve
@@ -19,7 +19,7 @@ $ phonegap serve
 
 ### For Cordova / Ionic users
 
-If you are using Cordova or Ionic and you don't have `phonegap` installed, never mind: you can use your existing project. All you have to do is to create a `.cordova` folder in your project's root folder (this is a Phonegap relic and will hopefully be removed in the future) and install Phonegap by running: 
+If you are using Cordova or Ionic and you don't have `phonegap` installed, never mind: you can use your existing project. Just create a `.cordova` folder in your project's root folder (this is a Phonegap relic and will hopefully be removed in the future) and install Phonegap by running: 
 
 ```sh
 $ npm install -g phonegap
