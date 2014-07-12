@@ -19,7 +19,7 @@ $ phonegap serve
 
 ### For Cordova / Ionic users
 
-If you are using Cordova or Ionic and you don't have `phonegap` installed, never mind: you can use your existing project. All you have to do is to create a `.cordova` folder in your project's root folder (this is a Phonegap relic and will be hopefully removed in the future) and install Phonegap by running: 
+If you are using Cordova or Ionic and you don't have `phonegap` installed, never mind: you can use your existing project. All you have to do is to create a `.cordova` folder in your project's root folder (this is a Phonegap relic and will hopefully be removed in the future) and install Phonegap by running: 
 
 ```sh
 $ npm install -g phonegap
@@ -31,7 +31,7 @@ You should now see an ip address in your terminal. Run the "PhoneGap" app on you
 
 ### Livereload
 
-`phonegap serve` supports livereload out of the box. Just make a change to a file inside your `www` folder and your application should automagically refresh. Awesome!
+`phonegap serve` supports livereload out of the box. Just make a change to a file inside your `www` folder and your application should refresh automagically. Awesome!
 
 At first I had some errors like this:
 
@@ -39,7 +39,7 @@ At first I had some errors like this:
 node[31020] (CarbonCore.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() => (null) (-21)
 ```
 
-I figured out this occured because there were to many files living in my `www` folder. I solved this problem by using [browserify](http://browserify.org) to auto build my javascript sources into one single file.
+I figured out this occured because there were too many files living in my `www` folder. I solved this problem by using [browserify](http://browserify.org) to auto build my javascript sources into one single file.
 
 ### Custom plugin support
 
