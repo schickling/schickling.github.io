@@ -79,7 +79,7 @@ h1 a { color: #333;}
 .gray { color: #999; }
 
 code {
-  white-space: normal;
+  white-space: pre-wrap;
 }
 
 p code {
